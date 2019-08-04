@@ -1,0 +1,3 @@
+from python:3.7.4-buster
+
+RUN pip install torf
