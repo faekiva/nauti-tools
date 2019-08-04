@@ -34,7 +34,7 @@ def main(show_path: str, using_git=True) -> None:
 
     for file in os.listdir(TEMPLATE_FOLDER):
         infile = os.path.join(os.curdir, TEMPLATE_FOLDER, file)
-        outfile = os.path.join(os.curdir, release_path)
+        outfile = os.path.join(os.curdir, release_path, file)
         substitute_tokens.substitute_file(infile, outfile, {EPISODE_TOKEN: next_ep})
 
     create_deploy_json(release_path, mux_path)
