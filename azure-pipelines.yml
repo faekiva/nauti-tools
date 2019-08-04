@@ -15,5 +15,5 @@ steps:
     repository: 'nautisubs/release'
     command: 'buildAndPush'
     Dockerfile: 'release/Dockerfile'
-    buildContext: 'release/**'
+    buildContext: 'release'
     tags: 'latest'
