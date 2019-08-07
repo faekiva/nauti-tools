@@ -16,9 +16,9 @@ def parse(argv=None):
 
 
 def substitute(text: str, substitutions: Dict[str, str]) -> str:
-    tokenizedsubs = {f"$({key})": value for key, value in substitutions}
+    tokenizedsubs = {f"$({key})": value for key, value in substitutions.items()}
     
-    for key, value in tokenizedsubs:
+    for key, value in tokenizedsubs.items():
         text = text.replace(key, value)
     
     return text
